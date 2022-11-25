@@ -2,6 +2,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.datasets import load_iris
 import matplotlib.pyplot as plt
+#Also download Iris data set
 
 # Loading data
 irisData = load_iris()
