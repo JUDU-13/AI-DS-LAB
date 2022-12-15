@@ -1,6 +1,6 @@
 from sklearn.datasets import load_breast_cancer
 from sklearn.metrics import confusion_matrix
-b_cancer = datasets.load_breast_cancer()
+b_cancer =load_breast_cancer()
 
 X = b_cancer.data
 y = b_cancer.target
@@ -17,6 +17,7 @@ print(y_pred)
 
 from sklearn.metrics import confusion_matrix
 import seaborn as sn
+import matplotlib.pyplot as plt
 cm = confusion_matrix(y_test, y_pred)
 print('Confusion matrix\n', cm)
 sn.heatmap(cm,annot=True)
